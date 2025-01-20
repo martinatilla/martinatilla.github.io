@@ -7,6 +7,38 @@ body {
     background-color: #f4f4f4;
     color: #333;
   }
+
+  .container {
+    display: inline-block;
+}
+
+.text {
+    font-size: 5em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(18),
+        cursor 0.4s step-end infinite alternate;
+}
+
+/* Cursor blinking */
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
   
   /* Header */
   header {
